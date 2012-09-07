@@ -70,7 +70,7 @@ create_collection <- function(title = NULL, objects = NULL) {
 	if(is.null(title))
 		stop("Please specify a title for your collection", call.=FALSE)
 
-	if(is.null(objects) || class(objects)!=list)
+	if(is.null(objects) || class(objects)! = list)
 		stop("You need to specify a list of objects to curate into a collection", call.=FALSE)
 
 	object_list <- toJSON(objects)	
