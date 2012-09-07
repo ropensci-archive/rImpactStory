@@ -1,4 +1,5 @@
-# rTotal Impact
+![Total Impact](total_impact.png) 
+# rTotal Impact 
 [Total Impact](http://total-impact.org/) is an effort to generate realtime metrics (aka [altmetrics](http://altmetrics.org)) on academic output (not just papers but also data and code) from a variety of sources.  This package provides a programmatic interface to the Total Impact API via R.
 
 
