@@ -71,15 +71,16 @@ metrics <- llply(tiid, metrics, .progress = 'text')
 collection_id <- create_collection(tiids) # function not working yet
 # Note that make_collection() needs a list as an input.
 
-collection_metadata <- collection_metadata('kn5auf')
-metrics <- collection_metrics(collection_id)
+metrics <- collection_metics('kn5auf')
+# You can save this to a csv:
+save_collection('kn5auf', file = '~/Desktop/test.csv')
 ```
 
 ## Neat, can I display these on the web?
 Sure, we've included the code you need to paste into your webpage to make that happen.
 just type in:
 ````r
-collection_id$code
+collection_id$code (not functional yet)
 # and there you have it!
 ```
 
