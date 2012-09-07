@@ -25,7 +25,7 @@ about_ti()
 It appears that we are currently on version jean-claude. Excellent.
 ```
 
-## Where providers does TI derive its metrics from?
+## Which providers does TI derive its metrics from?
 
 ```r
 ti_providers()
