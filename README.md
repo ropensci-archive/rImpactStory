@@ -75,7 +75,7 @@ collection_id <- create_collection(tiids) # function not working yet
 
 metrics <- collection_metics('kn5auf')
 # You can save this to a csv:
-save_collection('kn5auf', file = '~/Desktop/test.csv')
+save_collection('kn5auf', file = '~/Desktop/collection_metrics.csv')
 ```
 
 ## Neat, can I display these on the web?
