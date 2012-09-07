@@ -70,21 +70,10 @@ create_collection <- function(title = NULL, objects = NULL) {
 	if(is.null(title))
 		stop("Please specify a title for your collection", call.=FALSE)
 
-	if(is.null(objects) || class(objects)! = list)
+	if(is.null(objects) || class(objects)!=list)
 		stop("You need to specify a list of objects to curate into a collection", call.=FALSE)
 
 	object_list <- toJSON(objects)	
 	new_id <- postForm('http://api.total-impact.org/collection', args = object_list, style = "POST")  	
 
-}
-
-
-
-collection_metrics <- function (cid = NULL, include_items = TRUE) {
-	if(is.null(cid))
-		stop("You did not specify a collection ID", call.=FALSE)
-
-		collection_data <- getURL(paste0('http://api.total-impact.org/collection/', collection_id, "?", include_items))
-
-}
- 
+} 
