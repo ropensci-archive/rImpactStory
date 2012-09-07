@@ -65,7 +65,7 @@ tiids <- llply(as.list(my_ids$doi), tiid, .progress = 'text')
 metrics <- llply(tiid, metrics, .progress = 'text')
 ```
 
-## Looks great but seems a bit reptitive, right? If you have to repeatedly retrive metrics on a collection of objects, then just make it into a collection!
+## Looks great but seems a bit reptitive, right? If you have to repeatedly retrieve metrics on a collection of objects, then just make it into a collection!
 
 ```r
 collection_id <- create_collection(tiids) # function not working yet
