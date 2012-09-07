@@ -69,7 +69,7 @@ metrics <- llply(tiid, metrics, .progress = 'text')
 
 ```r
 collection_id <- create_collection(tiids) # function not working yet
-# Note that make_collection() needs a list as an input.
+# Note that create_collection() needs a list as an input where each item on the list is itself a list with namespace and the id.
 
 metrics <- collection_metics('kn5auf')
 # You can save this to a csv:
