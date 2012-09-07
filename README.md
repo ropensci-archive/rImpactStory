@@ -48,7 +48,8 @@ my_id <- tiid('10.1890/ES11-00339.1')
 tiid('karthikram', 'github')
 # Note that I explicitly specified the namespace since this isn't a doi.
 
-# This function internally calls create_tiid() if one a Total Impact ID was not previously assigned to this object. This process is transparent to a user but lower level functions are available to call directly.
+# This function internally calls create_tiid() if a Total Impact ID was not previously assigned to this object. 
+# This process is transparent to a user but lower level functions are available to call directly.
 
 # Now we can proceed to getting metrics on this source
 
