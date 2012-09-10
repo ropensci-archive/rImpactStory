@@ -5,7 +5,8 @@
 #' @export
 #' @seealso \code{tiid}
 #' @examples \dontrun{
-#' metrics(id = '0df8aa0eb2c911e19e181231381b0f5a')
+#' my_id <- tiid('10.1890/ES11-00339.1')	
+#' metrics(my_id)
 #'}
 #' @author Karthik Ram \email{karthik.ram@@gmail.com}
 metrics <- function(id = NA) {

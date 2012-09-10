@@ -51,9 +51,9 @@ tiid('karthikram', 'github')
 # This function internally calls create_tiid() if a Total Impact ID was not previously assigned to this object. 
 # This process is transparent to a user but lower level functions are available to call directly.
 
-# Now we can proceed to getting metrics on this source
+# Now we can proceed to getting metrics on this source (I've combined the two functions above).
 
-metrics(my_id)
+metrics(tiid('10.1890/ES11-00339.1'))
 
 ```
 
