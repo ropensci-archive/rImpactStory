@@ -7,6 +7,7 @@
 #' @examples \dontrun{
 #' metrics(id = '0df8aa0eb2c911e19e181231381b0f5a')
 #'}
+#' @author Karthik Ram \email{karthik.ram@@gmail.com}
 metrics <- function(id = NA) {
 if(is.null(id))
 	stop('A total impact id was not specified', call.=FALSE)

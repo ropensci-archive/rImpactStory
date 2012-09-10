@@ -8,6 +8,7 @@
 #' @examples \dontrun{
 #' collection_metrics('kn5auf')
 #'}
+#' @author Karthik Ram \email{karthik.ram@@gmail.com}
 collection_metrics <- function(collection_id = NULL, as.csv = FALSE) {
 	if(is.null(collection_id))
 		stop('Did not specify a collection ID', call.=FALSE)

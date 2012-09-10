@@ -9,6 +9,7 @@
 #' about_ti()
 #' about_ti(as.df = TRUE) # will return a nicely formatted \code{data.frame}
 #'}
+#' @author Karthik Ram \email{karthik.ram@@gmail.com}
 about_ti <- function(as.df = FALSE) {
  about <- getURL('http://api.total-impact.org')
  about <- as.list(fromJSON(I(about)))

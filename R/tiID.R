@@ -10,6 +10,7 @@
 #' @examples \dontrun{
 #' get_tiid('10.1038/nrg3270')
 #'}
+#' @author Karthik Ram \email{karthik.ram@@gmail.com}
 tiid <- function(id = NULL, nspace = "doi") {
 tiid <- getURL(paste0('http://api.total-impact.org/tiid/', nspace, "/", id))
  if(length(grep('404', tiid))>0 && grep('404', tiid)==1) {
