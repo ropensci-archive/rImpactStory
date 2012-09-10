@@ -8,7 +8,7 @@
 #' @seealso \code{create_collection}
 #' @return \code{list} if a valid total impact ID was found. Otherwise returns an error.
 #' @examples \dontrun{
-#' get_tiid('10.1038/nrg3270')
+#' tiid('10.1038/nrg3270')
 #'}
 #' @author Karthik Ram \email{karthik.ram@@gmail.com}
 tiid <- function(id = NULL, nspace = "doi") {
