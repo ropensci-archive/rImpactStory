@@ -18,7 +18,10 @@
 \dontrun{
 ti_providers()
 ti_providers(as.df = TRUE)
-write.csv(t1_providers(as.df = TRUE), file = "total-impact-metadata.csv") # will write the data to a flat \\code{csv} file. Note: The coercion will not be entirely clean due to the variable number of fields under description for each metric provider.
+write.csv(t1_providers(as.df = TRUE), file = "total-impact-metadata.csv") # will write the data to a flat csv file. Note: The coercion will not be entirely clean due to the variable number of fields under description for each metric provider.
 }
+}
+\author{
+  Karthik Ram \email{karthik.ram@gmail.com}
 }
 

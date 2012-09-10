@@ -27,8 +27,11 @@
 }
 \examples{
 \dontrun{
-get_tiid('10.1038/nrg3270')
+tiid('10.1038/nrg3270')
 }
+}
+\author{
+  Karthik Ram \email{karthik.ram@gmail.com}
 }
 \seealso{
   \code{create_collection}
