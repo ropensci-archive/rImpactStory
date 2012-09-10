@@ -19,7 +19,7 @@
 \examples{
 \dontrun{
 about_ti()
-about_ti(as.df = TRUE) # will return a nicely formatted data.frame
+about_ti(as.df = TRUE) # will return a nicely formatted \\code{data.frame}
 }
 }
 \author{

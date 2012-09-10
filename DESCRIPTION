@@ -29,5 +29,3 @@ Collate:
     'tiID.R'
     'ti_providers.R'
     'api_info.R'
-    'collection_methods.R'
-    'metrics_methods.R'

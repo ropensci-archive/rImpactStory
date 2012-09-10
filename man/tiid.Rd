@@ -27,7 +27,7 @@
 }
 \examples{
 \dontrun{
-tiid('10.1038/nrg3270')
+get_tiid('10.1038/nrg3270')
 }
 }
 \author{
