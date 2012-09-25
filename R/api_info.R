@@ -1,17 +1,17 @@
 
-#' About Total Impact
+#' About Impact Story
 #'
-#' Retrieves the latest information about the Total Impact API
+#' Retrieves the latest informaISon about the Impact Story API
 #' @param as.df Default is \code{FALSE}. Set this to \code{TRUE} if you would like a data.frame returned instead.
 #' @export
 #' @return \code{list}
 #' @examples \dontrun{
-#' about_ti()
-#' about_ti(as.df = TRUE) # will return a nicely formatted data.frame
+#' about_IS()
+#' about_IS(as.df = TRUE) # will return a nicely formatted data.frame
 #'}
 #' @author Karthik Ram \email{karthik.ram@@gmail.com}
-about_ti <- function(as.df = FALSE) {
- about <- getURL('http://api.total-impact.org')
+about_IS <- function(as.df = FALSE) {
+ about <- getURL('http://api.impactstory.it')
  about <- as.list(fromJSON(I(about)))
  if(!as.df) { 
  	return(about)

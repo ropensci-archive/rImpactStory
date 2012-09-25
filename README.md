@@ -1,20 +1,20 @@
-![Total Impact](https://raw.github.com/ropensci/rTotalImpact/master/total_impact.png) 
-# rTotal Impact 
-[Total Impact](http://total-impact.org/) is an effort to generate realtime metrics (aka [altmetrics](http://altmetrics.org)) on academic output (not just papers but also data and code) from a variety of sources.  This package provides a programmatic interface to the Total Impact API via R.
+![Impact Story](https://raw.github.com/ropensci/rImpactStory/master/impactstory-logo.png) 
+# rImpact Story 
+[Impact Story](http://total-impact.org/) is an effort to generate realISme metrics (aka [altmetrics](http://altmetrics.org)) on academic output (not just papers but also data and code) from a variety of sources.  This package provides a programmaISc interface to the Impact Story API via R.
 
 
 ## Installing this package
 
 ```r
 library(devtools)
-install_github('rTotalImpact', 'rOpenSci')
+install_github('rImpactStory', 'rOpenSci')
 ```
-## What is the current version of Total Impact's API?
+## What is the current version of Impact Story's API?
 
 ```r
-about_ti()
+about_IS()
 # you can get this as a cleaner output by setting as.df = TRUE
-> about_ti(as.df = TRUE)
+> about_IS(as.df = TRUE)
       Name                                                 Value
 1  contact                              totalimpactdev@gmail.com
 2    hello                                                 world
@@ -25,35 +25,35 @@ about_ti()
 It appears that we are currently on version jean-claude. Excellent.
 ```
 
-## Which providers does TI derive its metrics from?
+## Which providers does IS derive its metrics from?
 
 ```r
-ti_providers()
+IS_providers()
 # this will return a list. If you prefer a data.frame, then set as.df = TRUE
-ti_providers(as.df = TRUE)
-> head(ti_providers(as.df = TRUE))
-Total Impact currently provides metrics on the following data providers: 
+IS_providers(as.df = TRUE)
+> head(IS_providers(as.df = TRUE))
+Impact Story currently provides metrics on the following data providers: 
 bibtex citeulike crossref dataone delicious dryad facebook github mendeley plosalm pubmed slideshare topsy webpage wikipedia 
  ...
 # you can also save this information to a .csv file if you'd like:
-write.csv(ti_providers(as.df = TRUE), file = "~/Desktop/ti_providers.csv")
+write.csv(IS_providers(as.df = TRUE), file = "~/Desktop/IS_providers.csv")
 ```
 
 ## I have a DOI, can I get some metrics on this paper?
 
 ```r
-# First you need to get a Total Impact ID for any source you wish to track. 
-my_id <- tiid('10.1890/ES11-00339.1')
+# First you need to get a Impact Story ID for any source you wish to track. 
+my_id <- ISid('10.1890/ES11-00339.1')
 # You can do the same for other namespaces, such as github usernames.
-tiid('karthikram', 'github')
+ISid('karthikram', 'github')
 # Note that I explicitly specified the namespace since this isn't a doi.
 
-# This function internally calls create_tiid() if a Total Impact ID was not previously assigned to this object. 
+# This function internally calls create_ISid() if a Impact Story ID was not previously assigned to this object. 
 # This process is transparent to a user but lower level functions are available to call directly.
 
 # Now we can proceed to getting metrics on this source (I've combined the two functions above).
 
-metrics(tiid('10.1890/ES11-00339.1'))
+metrics(ISid('10.1890/ES11-00339.1'))
 
 ```
 
@@ -63,17 +63,17 @@ Sure thing!
 
 ```r
 my_ids <- read.csv('~/Desktop/list_of_dois.csv')
-tiids <- llply(as.list(my_ids$doi), tiid, .progress = 'text')
-metrics <- llply(tiid, metrics, .progress = 'text')
+ISids <- llply(as.list(my_ids$doi), ISid, .progress = 'text')
+metrics <- llply(ISid, metrics, .progress = 'text')
 ```
 
 ## Looks great but seems a bit reptitive, right? If you have to repeatedly retrieve metrics on a collection of objects, then just make it into a collection!
 
 ```r
-collection_id <- create_collection(tiids) # function not working yet
+collection_id <- create_collection(ISids) # function not working yet
 # Note that create_collection() needs a list as an input where each item on the list is itself a list with namespace and the id.
 
-metrics <- collection_metics('kn5auf')
+metrics <- collection_metrics('kn5auf')
 # You can save this to a csv:
 save_collection('kn5auf', file = '~/Desktop/collection_metrics.csv')
 ```

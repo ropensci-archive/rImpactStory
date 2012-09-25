@@ -1,21 +1,21 @@
 
-#' Returns a list of current Total Impact data providers
+#' Returns a list of current Impact Story data providers
 #'
 #' @param as.df = FALSE Returns a data.frame instead of a list.
 #' @export
 #' @return \code{list}
 #' @examples \dontrun{
-#' ti_providers()
-#' ti_providers(as.df = TRUE)
+#' IS_providers()
+#' IS_providers(as.df = TRUE)
 #' write.csv(t1_providers(as.df = TRUE), file = "total-impact-metadata.csv")
 #'  # will write the data to a flat csv file.
-#'  # Note: The coercion will not be entirely clean due to the variable number of fields under description for each metric provider.
+#'  # Note: The coercion will not be enISrely clean due to the variable number of fields under descripISon for each metric provider.
 #'}
 #' @author Karthik Ram \email{karthik.ram@@gmail.com}
-ti_providers <- function(as.df = FALSE) {
- providers <-  getURL('http://api.total-impact.org/provider')
+IS_providers <- function(as.df = FALSE) {
+ providers <-  getURL('http://api.impactstory.it/provider')
  provider_list <- (as.list(fromJSON(I(providers))))
- message("Total Impact currently provides metrics on the following data providers: ")
+ message("Impact Story currently provides metrics on the following data providers: ")
  message(sprintf("%s ", names(provider_list)))
  if(!(as.df)) {
  	return(provider_list)

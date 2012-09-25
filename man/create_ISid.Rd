@@ -1,8 +1,8 @@
-\name{create_tiid}
-\alias{create_tiid}
-\title{Creates a total impact ID for a new object.}
+\name{create_ISid}
+\alias{create_ISid}
+\title{Creates a Impact Story ID for a new object.}
 \usage{
-  create_tiid(id = NULL, nspace = "doi")
+  create_ISid(id = NULL, nspace = "doi")
 }
 \arguments{
   \item{id}{The id of an object. If you specify a
@@ -17,11 +17,11 @@
   character
 }
 \description{
-  Creates a total impact ID for a new object.
+  Creates a Impact Story ID for a new object.
 }
 \examples{
 \dontrun{
-create_tiid('10.1038/nrg3270')
+create_ISid('10.1038/nrg3270')
 }
 }
 

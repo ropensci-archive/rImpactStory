@@ -1,8 +1,8 @@
-\name{about_ti}
-\alias{about_ti}
-\title{About Total Impact}
+\name{about_IS}
+\alias{about_IS}
+\title{About Impact Story}
 \usage{
-  about_ti(as.df = FALSE)
+  about_IS(as.df = FALSE)
 }
 \arguments{
   \item{as.df}{Default is \code{FALSE}. Set this to
@@ -13,13 +13,13 @@
   \code{list}
 }
 \description{
-  Retrieves the latest information about the Total Impact
+  Retrieves the latest informaISon about the Impact Story
   API
 }
 \examples{
 \dontrun{
-about_ti()
-about_ti(as.df = TRUE) # will return a nicely formatted data.frame
+about_IS()
+about_IS(as.df = TRUE) # will return a nicely formatted data.frame
 }
 }
 \author{

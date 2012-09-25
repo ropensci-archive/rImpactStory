@@ -1,16 +1,16 @@
-Package: rTotalImpact
+Package: rImpactStory
 Type: Package
-Title: Obtains altmetrics from Total Impact. See http://total-impact.org for
+Title: Obtains altmetrics from Impact Story. See http://total-impact.org for
     more about the data.
 Version: 0.03
 Date: 2012-09-05
 Author: Karthik Ram <karthik.ram@gmail.com>, Scott Chamberlain
     <myrmecocystus@gmail.com>
 Maintainer: Karthik Ram <karthik.ram@gmail.com>
-Description: Provides a programmatic interface to Total Impact
+Description: Provides a programmaitc interface to Impact Story
 License: CC0
-URL: http://github.com/ropensci/rTotalImpact
-Bug reports: http://github.com/ropensci/rTotalImpact/issues
+URL: http://github.com/ropensci/rImpactStory
+Bug reports: http://github.com/ropensci/rImpactStory/issues
 Depends:
     RJSONIO,
     XML,
@@ -24,8 +24,7 @@ Imports:
     stringr,
     plyr
 Collate:
-    'collection.R'
     'getMetrics.R'
+    'api_info.R'
     'tiID.R'
     'ti_providers.R'
-    'api_info.R'
