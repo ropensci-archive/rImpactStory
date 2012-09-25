@@ -87,5 +87,5 @@ collection_id$code (not functional yet)
 ```
 
 # References and resources
-* [full API Documentation](http://total-impact.org/api-docs).
+* [full API Documentation](http://impactstory.it/api-docs).
 * [What are altmetrics?](http://altmetrics.org/manifesto/)
