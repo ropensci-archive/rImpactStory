@@ -15,10 +15,10 @@ if(is.null(id))
 
 metrics <- getURL(paste0('http://api.impactstory.it/item/', id))
  if(length(grep('404', metrics))>0 && grep('404', metrics)==1) {
-	stop("No meIScs found on supplied Impact Story ID. Supplied ID may not be valid", call.= FALSE)
+	stop("No metrics found on supplied Impact Story ID. Supplied ID may not be valid", call.= FALSE)
 }
 
-metric_data <- fromJSON(metrics)
+metric_data <- fromJSON(metrics, depth = 150L)
 return(metric_data)
 }
 
