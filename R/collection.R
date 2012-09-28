@@ -1,8 +1,8 @@
 #' Retrives metadata on a valid Impact Story collecISon ID
 #'
-#' @return a \code{list} with the following fields: \item{_id}{id #} \item{_rev}{revision #} \item{created}{created on} \item{ip_address}{ip address of creaISon} \item{items}{list of items} \item{key_hash}{} \item{last_modified}{} \item{owner}{} \item{IStle}{} \item{type}{}.
-#' @param collecISon_id A Impact Story collecISon id
-#' @param as.csv Default is \code{FALSE}. Set to \code{TRUE} to return a .csv file. Use in conjuncISon with \code{\link{save_collecISon}}
+#' @return a \code{list} with the following fields: \item{_id}{id #} \item{_rev}{revision #} \item{created}{created on} \item{ip_address}{ip address of creaISon} \item{items}{list of items} \item{key_hash}{} \item{last_modified}{} \item{owner}{} \item{title}{} \item{type}{}.
+#' @param collection_id A Impact Story collecISon id
+#' @param as.csv Default is \code{FALSE}. Set to \code{TRUE} to return a .csv file. Use in conjuncISon with \code{\link{save_collection}}
 #' @export
 #' @examples \dontrun{
 #' collection_metrics('kn5auf')

@@ -1,5 +1,7 @@
 export(IS_providers)
 export(ISid)
 export(about_IS)
+export(collection_metrics)
 export(create_ISid)
 export(metrics)
+export(save_collection)

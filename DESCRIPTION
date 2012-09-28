@@ -25,6 +25,7 @@ Imports:
     plyr
 Collate:
     'getMetrics.R'
+    'collection.R'
     'api_info.R'
     'tiID.R'
     'ti_providers.R'
