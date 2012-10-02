@@ -1,5 +1,5 @@
 ![Impact Story](https://raw.github.com/ropensci/rImpactStory/master/impactstory-logo.png) 
-# rImpact Story 
+# rImpactStory 
 [Impact Story](http://total-impact.org/) is an effort to generate realtime metrics (aka [altmetrics](http://altmetrics.org)) on academic output (not just papers but also data and code) from a variety of sources.  This package provides a programmatic interface to the Impact Story API via R.
 
 
