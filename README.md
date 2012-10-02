@@ -79,8 +79,10 @@ save_collection('kn5auf', file = '~/Desktop/collection_metrics.csv')
 ```
 
 ## Neat, can I display these on the web?
+
 Sure, we've included the code you need to paste into your webpage to make that happen.
 just type in:
+
 ````r
 collection_id$code (not functional yet)
 # and there you have it!
