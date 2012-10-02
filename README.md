@@ -1,6 +1,6 @@
-![Impact Story](https://raw.github.com/ropensci/rImpactStory/master/impactstory-logo.png) 
-# rImpact Story 
-[Impact Story](http://total-impact.org/) is an effort to generate realtime metrics (aka [altmetrics](http://altmetrics.org)) on academic output (not just papers but also data and code) from a variety of sources.  This package provides a programmatic interface to the Impact Story API via R.
+![ImpactStory](https://raw.github.com/ropensci/rImpactStory/master/impactstory-logo.png) 
+# rImpactStory 
+[ImpactStory](http://total-impact.org/) is an effort to generate realtime metrics (aka [altmetrics](http://altmetrics.org)) on academic output (not just papers but also data and code) from a variety of sources.  This package provides a programmatic interface to the ImpactStory API via R.
 
 
 ## Installing this package
@@ -9,7 +9,7 @@
 library(devtools)
 install_github('rImpactStory', 'rOpenSci')
 ```
-## What is the current version of Impact Story's API?
+## What is the current version of ImpactStory's API?
 
 ```r
 about_IS()
@@ -32,7 +32,7 @@ IS_providers()
 # this will return a list. If you prefer a data.frame, then set as.df = TRUE
 IS_providers(as.df = TRUE)
 > head(IS_providers(as.df = TRUE))
-Impact Story currently provides metrics on the following data providers: 
+ImpactStory currently provides metrics on the following data providers: 
 bibtex citeulike crossref dataone delicious dryad facebook github mendeley plosalm pubmed slideshare topsy webpage wikipedia 
  ...
 # you can also save this information to a .csv file if you'd like:
@@ -42,13 +42,13 @@ write.csv(IS_providers(as.df = TRUE), file = "~/Desktop/IS_providers.csv")
 ## I have a DOI, can I get some metrics on this paper?
 
 ```r
-# First you need to get a Impact Story ID for any source you wish to track. 
+# First you need to get a ImpactStory ID for any source you wish to track. 
 my_id <- ISid('10.1890/ES11-00339.1')
 # You can do the same for other namespaces, such as github usernames.
 ISid('karthikram', 'github')
 # Note that I explicitly specified the namespace since this isn't a doi.
 
-# This function internally calls create_ISid() if a Impact Story ID was not previously assigned to this object. 
+# This function internally calls create_ISid() if a ImpactStory ID was not previously assigned to this object. 
 # This process is transparent to a user but lower level functions are available to call directly.
 
 # Now we can proceed to getting metrics on this source (I've combined the two functions above).
