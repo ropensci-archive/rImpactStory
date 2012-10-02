@@ -38,6 +38,7 @@
         <ul class="nav nav-list bs-docs-sidenav">
           <li><a href="#about"><i class="icon-chevron-right"></i> About</a></li>
           <li><a href="#installation"><i class="icon-chevron-right"></i> Installation</a></li>
+          <li><a href="#providers"><i class="icon-chevron-right"></i> Providers</a></li>
           <li><a href="#metrics"><i class="icon-chevron-right"></i> metrics on objects</a></li>
           <li><a href="#download_metrics"><i class="icon-chevron-right"></i> metrics on collections</a></li> 
           <li><a href="#workflow"><i class="icon-chevron-right"></i> creating collections</a></li>
@@ -80,6 +81,42 @@
 install_github('rImpactStory', 'ropensci')</code></pre>
 
   </section>
+
+  <section id="providers">  
+  <h2> Who provides metrics for ImpactStory? </h2>
+  <pre><code lang="r">> IS_providers()
+Impact Story currently provides metrics on the following data providers: 
+bibtex citeulike crossref dataone delicious dryad facebook github mendeley plosalm pubmed scienceseeker scopus slideshare topsy webpage wikipedia 
+$bibtex
+$bibtex$descr
+[1] ""
+
+$bibtex$provides_aliases
+[1] FALSE
+
+$bibtex$provides_metrics
+[1] FALSE
+
+$bibtex$url
+[1] ""
+# ... results truncated
+
+# You can also get this as a nicely formatted tabular format
+
+IS_providers(as.df = T)
+
+# and save that to disk using
+
+write.csv(IS_providers(as.df = T), file = "ImpactStory_providers.csv")
+
+about_IS() # Will get you the current version of the API
+
+# As always, you can request a flat file friendly format
+
+about_IS(as.df = TRUE)
+write.csv(about_IS(as.df = TRUE), file="About_Impact_Story.csv")
+</code></pre>
+   </section> 
 
   <br><br><br>
 
