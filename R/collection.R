@@ -12,18 +12,18 @@ collection_metrics <- function(collection_id = NULL, as.csv = FALSE) {
 	if(is.null(collection_id))
 		stop('Did not specify a collection ID', call.=FALSE)
 
-collection_data <- getURL(paste0('http://api.impactstory.it/collection/', collection_id))		
+collection_data <- getURL(paste0('http://api.impactstory.org/collection/', collection_id))		
 
 	if(length(grep('404', collection_data))>0 && grep('404', collection_data)==1) {
 						stop('No metadata found for supplied collection id', call.=FALSE)
 
 		}  else {
 						if(!as.csv) {	
-				collection_data <- getURL(paste0('http://api.impactstory.it/collection/', collection_id))
+				collection_data <- getURL(paste0('http://api.impactstory.org/collection/', collection_id))
 				cmd_results <- fromJSON(collection_data)
 				return(cmd_results)
 				} else {
-				 collection_data <- getURL(paste0('http://api.impactstory.it/collection/', collection_id,".csv"))	
+				 collection_data <- getURL(paste0('http://api.impactstory.org/collection/', collection_id,".csv"))	
 				 return(collection_data)
 				}
 				

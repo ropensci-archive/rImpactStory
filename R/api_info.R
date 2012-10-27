@@ -11,7 +11,7 @@
 #'}
 #' @author Karthik Ram \email{karthik.ram@@gmail.com}
 about_IS <- function(as.df = FALSE) {
- about <- getURL('http://api.impactstory.it')
+ about <- getURL('http://api.impactstory.org')
  about <- as.list(fromJSON(I(about)))
  if(!as.df) { 
  	return(about)

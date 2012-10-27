@@ -13,7 +13,7 @@
 #'}
 #' @author Karthik Ram \email{karthik.ram@@gmail.com}
 IS_providers <- function(as.df = FALSE) {
- providers <-  getURL('http://api.impactstory.it/provider')
+ providers <-  getURL('http://api.impactstory.org/provider')
  provider_list <- (as.list(fromJSON(I(providers))))
  message("Impact Story currently provides metrics on the following data providers: ")
  message(sprintf("%s ", names(provider_list)))

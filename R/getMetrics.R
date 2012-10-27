@@ -13,7 +13,7 @@ metrics <- function(id = NA) {
 if(is.null(id))
 	stop('A Impact Story id was not specified', call.=FALSE)
 
-metrics <- getURL(paste0('http://api.impactstory.it/item/', id))
+metrics <- getURL(paste0('http://api.impactstory.org/item/', id))
  if(length(grep('404', metrics))>0 && grep('404', metrics)==1) {
 	stop("No metrics found on supplied Impact Story ID. Supplied ID may not be valid", call.= FALSE)
 }
