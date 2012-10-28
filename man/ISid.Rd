@@ -1,6 +1,6 @@
 \name{ISid}
 \alias{ISid}
-\title{Retrieves the Impact Story ID for a given object.}
+\title{Retrieves the Impact Story ID for a given object. (These functions will get deprecated since IS is planning to remove this feature.)}
 \usage{
   ISid(id = NULL, nspace = "doi")
 }

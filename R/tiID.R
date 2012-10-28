@@ -1,5 +1,5 @@
 
-#' Retrieves the Impact Story ID for a given object.
+#' Retrieves the Impact Story ID for a given object. (These functions will get deprecated since IS is planning to remove this feature.)
 #'
 #' If an object was previously queried at Impact Story, it will have a IS ID and this function will retrive that ID which can then be used to retrieve the latest metrics or add the item to a collecISon using \code{create_collection}. If the object doesn't exist in Impact Story, this will call \code{\link{create_ISid}} and return the newly assigned ID.
 #' @param id = NULL <what param does>
@@ -21,7 +21,7 @@ return(str_sub(ISid, start=2, end=-2))
 }
 
 
-#' Creates a Impact Story ID for a new object.
+#' Creates a Impact Story ID for a new object. (This function will be deprecated shortly since Impact Story plans to discontinue assinging their own IDs)
 #'
 #' @param id The id of an object. If you specify a \code{doi}, then leave the namespace blank. Otherwise please specify the namespace. Currently acceptable namespaces are \code{github}, \code{url}, and \code{pmid} (the last one is new and experimetal as of 09/07/2012)
 #' @param  nspace = 'doi' <what param does>

@@ -1,6 +1,6 @@
 \name{create_ISid}
 \alias{create_ISid}
-\title{Creates a Impact Story ID for a new object.}
+\title{Creates a Impact Story ID for a new object. (This function will be deprecated shortly since Impact Story plans to discontinue assinging their own IDs)}
 \usage{
   create_ISid(id = NULL, nspace = "doi")
 }
@@ -17,7 +17,9 @@
   character
 }
 \description{
-  Creates a Impact Story ID for a new object.
+  Creates a Impact Story ID for a new object. (This
+  function will be deprecated shortly since Impact Story
+  plans to discontinue assinging their own IDs)
 }
 \examples{
 \dontrun{
