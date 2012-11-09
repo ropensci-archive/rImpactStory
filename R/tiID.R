@@ -12,7 +12,7 @@
 #'}
 #' @author Karthik Ram \email{karthik.ram@@gmail.com}
 ISid <- function(id = NULL, nspace = "doi") {
-ISid <- getURL(paste0('http://api.impactstory.it/ISid/', nspace, "/", id))
+ISid <- getURL(paste0('http://api.impactstory.org/tiid/', nspace, "/", id))
  if(length(grep('404', ISid))>0 && grep('404', ISid)==1) {
 	  create_ISid(id, nspace)
 } else {
@@ -31,7 +31,7 @@ return(str_sub(ISid, start=2, end=-2))
 #' create_ISid('10.1038/nrg3270')
 #'}
 create_ISid <- function(id = NULL, nspace = 'doi') {
-    new_id <- postForm(paste0("http://api.impactstory.it/item/", nspace, "/", id), args = NULL, style = "POST")  
+    new_id <- postForm(paste0("http://api.impactstory.org/item/", nspace, "/", id), args = NULL, style = "POST")  
     return(str_sub(new_id[1], start = 2, end = -2))
 }
 
