@@ -1,8 +1,8 @@
 
 #' Returns the metrics for a valid Impact Story ID
 #'
-#' @param id  A Impact Story ID
-#  @param nspace Namespace for the identifier. Valid namespaces include doi, github.
+#' @param id  An Impact Story ID
+#' @param nspace Namespace for the identifier. Valid namespaces include doi, github (among others).
 #' @export
 #' @examples \dontrun{
 #' Get metrics on a github repo
@@ -11,21 +11,16 @@
 #' metrics('10.1038/171737a0')
 #'}
 #' @author Karthik Ram \email{karthik.ram@@gmail.com}
-metrics <- function(id = NA, nspace = 'doi') {
-if(is.na(id))
+metrics <- function(id = NULL, nspace = 'doi') {
+if(is.null(id))
 	stop("No id specified", call.=FALSE)
 
-<<<<<<< HEAD
-metrics <- getURL(paste0('http://api.impactstory.org/item/', id))
- if(length(grep('404', metrics))>0 && grep('404', metrics)==1) {
-=======
 id2 <- ISid(id, nspace)	
 
 metrics <- getURL(paste0("http://api.impactstory.org/item/", id2))
 
 
  if(length(grep('404 Not Found', metrics))>0 && grep('404 Not Found', metrics)==1) {
->>>>>>> gh-pages
 	stop("No metrics found on supplied Impact Story ID. Supplied ID may not be valid", call.= FALSE)
 }
 
