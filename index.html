@@ -40,8 +40,8 @@
           <li><a href="#installation"><i class="icon-chevron-right"></i> Installation</a></li>
           <li><a href="#providers"><i class="icon-chevron-right"></i> Providers</a></li>
           <li><a href="#metrics"><i class="icon-chevron-right"></i> metrics on objects</a></li>
-          <li><a href="#download_metrics"><i class="icon-chevron-right"></i> metrics on collections</a></li> 
-          <li><a href="#workflow"><i class="icon-chevron-right"></i> creating collections</a></li>
+          <li><a href="#collections"><i class="icon-chevron-right"></i> metrics on collections</a></li> 
+          <li><a href="#create_collections"><i class="icon-chevron-right"></i> creating collections</a></li>
           <li><a href="#viz"><i class="icon-chevron-right"></i> Visualization</a></li>
           <li><a href="#support"><i class="icon-chevron-right"></i> Support and Bugs</a></li>
           <li><a href="#license"><i class="icon-chevron-right"></i> License</a></li>
@@ -120,6 +120,23 @@ write.csv(about_IS(as.df = TRUE), file="About_Impact_Story.csv")
 
   <br><br><br>
 
+<section id="metrics">
+<h2>Metrics on individual objects</h2>  
+<pre><code lang="r"># Metrics on a github repository
+metrics('karthikram,rtools', 'github')
+# metrics on a paper
+metrics('10.1038/171737a0')
+</code>
+</pre>
+</section>
+
+<section id="collections">
+<h2>Metrics on collections</h2>
+<pre>
+<code lang="r"># It's also easy to download metrics on existing collections
+collection_metrics('kn5auf')</code>
+</pre>
+</section>
   
       <section id="license">
  <h2>License</h2>
