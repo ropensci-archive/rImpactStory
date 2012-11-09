@@ -9,6 +9,8 @@
 #' metrics('karthikram,rtools', 'github')
 #' Get metrics on an article from its DOI
 #' metrics('10.1038/171737a0')
+#' # metrics on a figshare document
+#' metrics('10.6084/m9.figshare.97222', 'figshare')
 #'}
 #' @author Karthik Ram \email{karthik.ram@@gmail.com}
 metrics <- function(id = NULL, nspace = 'doi') {
