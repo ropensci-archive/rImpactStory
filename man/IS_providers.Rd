@@ -1,18 +1,18 @@
 \name{IS_providers}
 \alias{IS_providers}
-\title{Returns a list of current Impact Story data providers}
+\title{Returns a list of current ImpactStory data providers}
 \usage{
   IS_providers(as.df = FALSE)
 }
 \arguments{
-  \item{as.df}{= FALSE Returns a data.frame instead of a
-  list.}
+  \item{as.df}{= \code{FALSE}. Returns a \code{data.frame}
+  instead of a list.}
 }
 \value{
   \code{list}
 }
 \description{
-  Returns a list of current Impact Story data providers
+  Returns a list of current ImpactStory data providers
 }
 \examples{
 \dontrun{

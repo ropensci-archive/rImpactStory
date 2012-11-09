@@ -5,7 +5,7 @@
   ISid(id = NULL, nspace = "doi")
 }
 \arguments{
-  \item{id}{= NULL <what param does>}
+  \item{id}{Any object ID}
 
   \item{nspace}{Default is \code{doi} but can be changed to
   \code{github}, \code{url}, \code{pmid}. Others such as
