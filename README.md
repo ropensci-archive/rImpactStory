@@ -15,14 +15,14 @@ install_github('rImpactStory', 'rOpenSci')
 about_IS()
 # you can get this as a cleaner output by setting as.df = TRUE
 > about_IS(as.df = TRUE)
-      Name                                                 Value
+     Name                                                 Value
 1  contact                              totalimpactdev@gmail.com
 2    hello                                                 world
 3  message Congratulations! You have found the total-Impact API.
 4 moreinfo                       http://total-impact.tumblr.com/
-5  version                                           jean-claude
+5  version                                             cristhian
 
-It appears that we are currently on version jean-claude. Excellent.
+It appears that we are currently on version cristhian. Excellent.
 ```
 
 ## Which providers does IS derive its metrics from?
