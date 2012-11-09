@@ -44,11 +44,7 @@ write.csv(IS_providers(as.df = TRUE), file = "~/Desktop/IS_providers.csv")
 ```r
 # First you need to get a ImpactStory ID for any source you wish to track. 
 my_id <- ISid('10.1890/ES11-00339.1')
-<<<<<<< HEAD
-# You can do the same for other namespaces, such as github projects (specify as username, repo name).
-=======
 # You can do the same for other namespaces, such as github usernames (specify as username, repo name).
->>>>>>> gh-pages
 ISid('karthikram,rtools', 'github')
 # Note that I explicitly specified the namespace since this isn't a doi.
 
