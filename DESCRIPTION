@@ -1,6 +1,6 @@
 Package: rImpactStory
 Type: Package
-Title: Obtains altmetrics from ImpactStory. See http://impactstory.org for
+Title: Retrieves altmetrics from ImpactStory. See http://impactstory.org for
     more about the metrics.
 Version: 0.03
 Date: 2012-09-05
