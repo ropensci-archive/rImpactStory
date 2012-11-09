@@ -42,7 +42,6 @@
           <li><a href="#metrics"><i class="icon-chevron-right"></i> metrics on objects</a></li>
           <li><a href="#collections"><i class="icon-chevron-right"></i> metrics on collections</a></li> 
           <li><a href="#create_collections"><i class="icon-chevron-right"></i> creating collections</a></li>
-          <li><a href="#viz"><i class="icon-chevron-right"></i> Visualization</a></li>
           <li><a href="#support"><i class="icon-chevron-right"></i> Support and Bugs</a></li>
           <li><a href="#license"><i class="icon-chevron-right"></i> License</a></li>
 
@@ -54,7 +53,7 @@
   <section id="about">
 
  <h2>About the package</h2>
-  This package provides a way to programmatically retrieve altmetric data from <a href="http://impactstory.it">ImpactStory</a> for a range of academic endavours with the appropriate identifer. more details on the package are forthcoming.
+  This package provides a way to programmatically retrieve altmetric data from <a href="http://impactstory.org">ImpactStory</a> for a range of academic endavours with the appropriate identifer. more details on the package are forthcoming.
 
 <br>New to the idea of altmetrics? Here are a couple of articles worth reading: <br>
  <ul>
@@ -122,6 +121,7 @@ write.csv(about_IS(as.df = TRUE), file="About_Impact_Story.csv")
 
 <section id="metrics">
 <h2>Metrics on individual objects</h2>  
+For a detailed explanation of all the sources and metrics queried by ImpactStory, please read their <a href="http://impactstory.org/faq">faq</a>. (scroll down to <i>which metrics are measured?</i>)
 <pre><code lang="r"># Metrics on a github repository
 metrics('karthikram,rtools', nspace = 'github')
 # metrics on a paper
@@ -140,7 +140,14 @@ collection_metrics('kn5auf')</code>
 </pre>
 </section>
   
-      <section id="license">
+
+<section id="create_collections">
+  <h2>Creating collections</h2>
+  This functionality is not ready yet and will be released with the next version of the package.
+</section>
+
+
+<section id="license">
  <h2>License</h2>
  <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/3.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US">Creative Commons Attribution 3.0 Unported License</a>.
   
