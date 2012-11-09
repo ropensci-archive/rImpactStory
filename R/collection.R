@@ -1,7 +1,7 @@
-#' Retrives metadata on a valid Impact Story collecISon ID
+#' Retrives metadata on a valid Impact Story collection ID
 #'
-#' @return a \code{list} with the following fields: \item{_id}{id #} \item{_rev}{revision #} \item{created}{created on} \item{ip_address}{ip address of creaISon} \item{items}{list of items} \item{key_hash}{} \item{last_modified}{} \item{owner}{} \item{title}{} \item{type}{}.
-#' @param collection_id A Impact Story collecISon id
+#' @return a \code{list} with the following fields: \item{_id}{id #} \item{_rev}{revision #} \item{created}{created on} \item{ip_address}{ip address of creation} \item{items}{list of items} \item{key_hash}{} \item{last_modified}{} \item{owner}{} \item{title}{} \item{type}{}.
+#' @param collection_id A Impact Story collection id
 #' @param as.csv Default is \code{FALSE}. Set to \code{TRUE} to return a .csv file. Use in conjuncISon with \code{\link{save_collection}}
 #' @export
 #' @examples \dontrun{
@@ -14,7 +14,7 @@ collection_metrics <- function(collection_id = NULL, as.csv = FALSE) {
 
 collection_data <- getURL(paste0('http://api.impactstory.org/collection/', collection_id))		
 
-	if(length(grep('404', collection_data))>0 && grep('404', collection_data)==1) {
+	if(length(grep('404 Not Found', collection_data))>0 && grep('404 Not Found', collection_data)==1) {
 						stop('No metadata found for supplied collection id', call.=FALSE)
 
 		}  else {
