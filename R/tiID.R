@@ -12,7 +12,11 @@
 #'}
 #' @author Karthik Ram \email{karthik.ram@@gmail.com}
 ISid <- function(id = NULL, nspace = "doi") {
+<<<<<<< HEAD
 ISid <- getURL(paste0('http://api.impactstory.org/ISid/', nspace, "/", id))
+=======
+ISid <- getURL(paste0('http://api.impactstory.org/tiid/', nspace, "/", id))
+>>>>>>> gh-pages
  if(length(grep('404', ISid))>0 && grep('404', ISid)==1) {
 	  create_ISid(id, nspace)
 } else {
