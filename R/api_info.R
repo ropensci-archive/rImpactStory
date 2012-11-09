@@ -1,8 +1,8 @@
 
-#' About Impact Story
+#' About ImpactStory
 #'
-#' Retrieves the latest informaISon about the Impact Story API
-#' @param as.df Default is \code{FALSE}. Set this to \code{TRUE} if you would like a data.frame returned instead.
+#' Retrieves the latest information about the ImpactStory API
+#' @param as.df Default is \code{FALSE}. Set this to \code{TRUE} if you would like a \code{data.frame} returned instead.
 #' @export
 #' @return \code{list}
 #' @examples \dontrun{

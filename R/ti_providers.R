@@ -1,7 +1,7 @@
 
-#' Returns a list of current Impact Story data providers
+#' Returns a list of current ImpactStory data providers
 #'
-#' @param as.df = FALSE Returns a data.frame instead of a list.
+#' @param as.df = \code{FALSE}. Returns a \code{data.frame} instead of a list.
 #' @export
 #' @return \code{list}
 #' @examples \dontrun{
