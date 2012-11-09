@@ -4,8 +4,8 @@ Title: Obtains altmetrics from ImpactStory. See http://impactstory.org for
     more about the metrics.
 Version: 0.03
 Date: 2012-09-05
-Author: Karthik Ram <karthik.ram@gmail.com>, Scott Chamberlain
-    <myrmecocystus@gmail.com>
+Authors@R: c(person("Karthik", "Ram", role = c("aut", "cre"), email =
+    "karthik.ram@gmail.com"), person("Scott", "Chamberlain", role = "aut"))
 Maintainer: Karthik Ram <karthik.ram@gmail.com>
 Description: Provides a programmaitc interface to Impact Story
 License: CC0
