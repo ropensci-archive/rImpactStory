@@ -8,7 +8,7 @@
   \item{collection_id}{A Impact Story collection id}
 
   \item{as.csv}{Default is \code{FALSE}. Set to \code{TRUE}
-  to return a .csv file. Use in conjuncISon with
+  to return a .csv file. Use in conjunction with
   \code{\link{save_collection}}}
 }
 \value{

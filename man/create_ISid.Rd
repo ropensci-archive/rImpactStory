@@ -1,6 +1,6 @@
 \name{create_ISid}
 \alias{create_ISid}
-\title{Creates a Impact Story ID for a new object. (This function will be deprecated shortly since Impact Story plans to discontinue assinging their own IDs)}
+\title{Creates a ImpactStory ID for a new object. (This function will be deprecated shortly since Impact Story plans to discontinue assinging their own IDs)}
 \usage{
   create_ISid(id = NULL, nspace = "doi")
 }
@@ -11,15 +11,15 @@
   namespaces are \code{github}, \code{url}, and \code{pmid}
   (the last one is new and experimetal as of 09/07/2012)}
 
-  \item{nspace}{= 'doi' <what param does>}
+  \item{nspace}{Default is \code{doi}}
 }
 \value{
   character
 }
 \description{
-  Creates a Impact Story ID for a new object. (This
-  function will be deprecated shortly since Impact Story
-  plans to discontinue assinging their own IDs)
+  Creates a ImpactStory ID for a new object. (This function
+  will be deprecated shortly since Impact Story plans to
+  discontinue assinging their own IDs)
 }
 \examples{
 \dontrun{
