@@ -7,7 +7,7 @@ Date: 2012-09-05
 Authors@R: c(person("Karthik", "Ram", role = c("aut", "cre"), email =
     "karthik.ram@gmail.com"), person("Scott", "Chamberlain", role = "aut"))
 Maintainer: Karthik Ram <karthik.ram@gmail.com>
-Description: Provides a programmaitc interface to Impact Story
+Description: Provides a programmatic interface to ImpactStory API
 License: CC0
 URL: http://github.com/ropensci/rImpactStory
 Bug reports: http://github.com/ropensci/rImpactStory/issues
