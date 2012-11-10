@@ -1,11 +1,11 @@
 
-#' Returns the metrics for a valid Impact Story ID
+#' Returns the metrics for a valid ImpactStory ID
 #'
-#' @param id  An Impact Story ID
-#' @param nspace Namespace for the identifier. Valid namespaces include doi, github (among others). Read more about available metrics here: http://impactstory.org/faq
+#' @param id  An ImpactStory ID
+#' @param nspace Namespace for the identifier. Valid namespaces include doi, github (among others). Read more about available metrics here: \url{http://impactstory.org/faq}
 #' @export
 #' @examples \dontrun{
-#' Get metrics on a github repo
+#' Get metrics on a github repo (username,reponame)
 #' metrics('karthikram,rtools', nspace ='github')
 #' Get metrics on an article from its DOI
 #' metrics('10.1038/171737a0')

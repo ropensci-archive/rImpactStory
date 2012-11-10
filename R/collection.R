@@ -1,4 +1,4 @@
-#' Retrives metadata on a valid Impact Story collection ID
+#' Retrives metadata on a valid ImpactStory collection ID
 #'
 #' @return a \code{list} with the following fields: \item{_id}{id #} \item{_rev}{revision #} \item{created}{created on} \item{ip_address}{ip address of creation} \item{items}{list of items} \item{key_hash}{} \item{last_modified}{} \item{owner}{} \item{title}{} \item{type}{}.
 #' @param collection_id A Impact Story collection id
@@ -32,7 +32,7 @@ collection_data <- getURL(paste0('http://api.impactstory.org/collection/', colle
 
 #'Saves metrics from a collection to a csv file 
 #'
-#' @param cid  A valid Impact Story collection ID
+#' @param cid  A valid ImpactStory collection ID
 #' @param  file A filename for the \code{csv} file including path. If left blank, the file is named after the collection and stored in the current working directory.
 #' @export
 #' @examples \dontrun{
