@@ -23,10 +23,10 @@ return(str_sub(ISid, start=2, end=-2))
 }
 
 
-#' Creates a Impact Story ID for a new object. (This function will be deprecated shortly since Impact Story plans to discontinue assinging their own IDs)
+#' Creates a ImpactStory ID for a new object. (This function will be deprecated shortly since Impact Story plans to discontinue assinging their own IDs)
 #'
 #' @param id The id of an object. If you specify a \code{doi}, then leave the namespace blank. Otherwise please specify the namespace. Currently acceptable namespaces are \code{github}, \code{url}, and \code{pmid} (the last one is new and experimetal as of 09/07/2012)
-#' @param  nspace = 'doi' <what param does>
+#' @param  nspace Default is \code{doi}
 #' @export
 #' @return character
 #' @examples \dontrun{
