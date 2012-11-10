@@ -5,7 +5,7 @@
   save_collection(cid = NULL, file = NULL)
 }
 \arguments{
-  \item{cid}{A valid Impact Story collection ID}
+  \item{cid}{A valid ImpactStory collection ID}
 
   \item{file}{A filename for the \code{csv} file including
   path. If left blank, the file is named after the

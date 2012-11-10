@@ -1,6 +1,6 @@
 \name{ISid}
 \alias{ISid}
-\title{Retrieves the Impact Story ID for a given object. (These functions will get deprecated since IS is planning to remove this feature.)}
+\title{Retrieves the ImpactStory ID for a given object. (These functions will get deprecated since IS is planning to remove this feature.)}
 \usage{
   ISid(id = NULL, nspace = "doi")
 }
@@ -12,11 +12,11 @@
   \code{Mendeley} and \code{arXiv} are forthcoming.}
 }
 \value{
-  \code{list} if a valid Impact Story ID was found.
+  \code{list} if a valid ImpactStory ID was found.
   Otherwise returns an error.
 }
 \description{
-  If an object was previously queried at Impact Story, it
+  If an object was previously queried at ImpactStory, it
   will have a IS ID and this function will retrive that ID
   which can then be used to retrieve the latest metrics or
   add the item to a collecISon using

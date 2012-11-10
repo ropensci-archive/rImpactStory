@@ -1,6 +1,6 @@
 \name{collection_metrics}
 \alias{collection_metrics}
-\title{Retrives metadata on a valid Impact Story collection ID}
+\title{Retrives metadata on a valid ImpactStory collection ID}
 \usage{
   collection_metrics(collection_id = NULL, as.csv = FALSE)
 }
@@ -20,7 +20,7 @@
   \item{type}{}.
 }
 \description{
-  Retrives metadata on a valid Impact Story collection ID
+  Retrives metadata on a valid ImpactStory collection ID
 }
 \examples{
 \dontrun{

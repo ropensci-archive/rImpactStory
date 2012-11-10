@@ -1,11 +1,11 @@
 \name{metrics}
 \alias{metrics}
-\title{Returns the metrics for a valid Impact Story ID}
+\title{Returns the metrics for a valid ImpactStory ID}
 \usage{
   metrics(id = NULL, nspace = "doi")
 }
 \arguments{
-  \item{id}{An Impact Story ID}
+  \item{id}{An ImpactStory ID}
 
   \item{nspace}{Namespace for the identifier. Valid
   namespaces include doi, github (among others). Read more
@@ -13,11 +13,11 @@
   \url{http://impactstory.org/faq}}
 }
 \description{
-  Returns the metrics for a valid Impact Story ID
+  Returns the metrics for a valid ImpactStory ID
 }
 \examples{
 \dontrun{
-Get metrics on a github repo
+Get metrics on a github repo (username,reponame)
 metrics('karthikram,rtools', nspace ='github')
 Get metrics on an article from its DOI
 metrics('10.1038/171737a0')
