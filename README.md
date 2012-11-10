@@ -4,6 +4,7 @@
 
 
 ## Installing this package
+A stable version of this package is now available on CRAN. But if you prefer to install a dev version, follow the instructions below:
 
 ```r
 library(devtools)
