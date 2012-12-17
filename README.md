@@ -10,6 +10,13 @@ A stable version of this package is now available on CRAN. But if you prefer to 
 library(devtools)
 install_github('rImpactStory', 'rOpenSci')
 ```
+# API keys
+As of V1, ImpactStory now requires API keys. To request one, send an email to [team@impactstory.org](mailto:team@impactstory.org). The key allows one to register up to 1000 items for free. For use with this package, one should store the key in their `.rprofile` as follows:
+
+`options(ImpactStoryKey = 'YOUR_KEY')`
+
+or supply it as a function argument with each call (in situations where storing in the `.rprofile` is not ideal.)
+
 ## What is the current version of ImpactStory's API?
 
 ```r
