@@ -2,7 +2,7 @@ Package: rImpactStory
 Type: Package
 Title: Retrieves altmetrics from ImpactStory. See http://impactstory.org for
     more about the metrics.
-Version: 0.03
+Version: 0.05
 Date: 2012-09-05
 Authors@R: c(person("Karthik", "Ram", role = c("aut", "cre"), email =
     "karthik.ram@gmail.com"), person("Scott", "Chamberlain", role = "aut"))
