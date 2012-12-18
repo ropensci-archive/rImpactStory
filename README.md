@@ -50,19 +50,8 @@ write.csv(IS_providers(as.df = TRUE), file = "~/Desktop/IS_providers.csv")
 ## I have a DOI, can I get some metrics on this paper?
 
 ```r
-# First you need to get a ImpactStory ID for any source you wish to track.
-my_id <- ISid('10.1890/ES11-00339.1')
-# You can do the same for other namespaces, such as github usernames (specify as username, repo name).
-ISid('karthikram,rtools', 'github')
-# Note that I explicitly specified the namespace since this isn't a doi.
-
-# This function internally calls create_ISid() if a ImpactStory ID was not previously assigned to this object.
-# This process is transparent to a user but lower level functions are available to call directly.
-
-# Now we can proceed to getting metrics on this source (I've combined the two functions above).
-
-metrics(ISid('10.1890/ES11-00339.1'))
-
+my_id <- metrics('10.1890/ES11-00339.1')
+# That simple! ImpactStory no longer generates their own unique ID. Just be sure to explicitly specifiy namespace if you are supplying something other than a DOI
 ```
 
 ## But I have a large list of DOIs, can I do this for all?
