@@ -60,8 +60,7 @@ Sure thing!
 
 ```r
 my_ids <- read.csv('~/Desktop/list_of_dois.csv')
-ISids <- llply(as.list(my_ids$doi), ISid, .progress = 'text')
-metrics <- llply(ISid, metrics, .progress = 'text')
+metrics <- llply(as.list(my_ids$doi), metrics, .progress = 'text')
 ```
 
 ## Looks great but seems a bit reptitive, right? If you have to repeatedly retrieve metrics on a collection of objects, then just make it into a collection!
