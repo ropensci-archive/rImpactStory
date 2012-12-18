@@ -19,9 +19,9 @@
 
   <div class="span11 offset1">
   <div class="row">
-  <br><br>  
+  <br><br>
    <img src="https://raw.github.com/ropensci/rImpactStory/master/impactstory-logo.png"><h1>rImpactStory, v0.03</h1>
-  </div> 
+  </div>
 
   <div class"row"><a href="http://impactstory.org/">ImpactStory</a> provides  metrics on a range of academic products, not just publications. ImpactStory derives metrics from GitHub, Delicious, StackOverflow, among others (see below for a full list).
   <br><br>
@@ -32,15 +32,15 @@
   <hr class="soften">
   </div>
 
-  <div class="row"> 
- <div class="span3"> 
+  <div class="row">
+ <div class="span3">
         <div class="span3 bs-docs-sidebar">
         <ul class="nav nav-list bs-docs-sidenav">
           <li><a href="#about"><i class="icon-chevron-right"></i> About</a></li>
           <li><a href="#installation"><i class="icon-chevron-right"></i> Installation</a></li>
           <li><a href="#providers"><i class="icon-chevron-right"></i> Providers</a></li>
           <li><a href="#metrics"><i class="icon-chevron-right"></i> metrics on objects</a></li>
-          <li><a href="#collections"><i class="icon-chevron-right"></i> metrics on collections</a></li> 
+          <li><a href="#collections"><i class="icon-chevron-right"></i> metrics on collections</a></li>
           <li><a href="#create_collections"><i class="icon-chevron-right"></i> creating collections</a></li>
           <li><a href="#support"><i class="icon-chevron-right"></i> Support and Bugs</a></li>
           <li><a href="#license"><i class="icon-chevron-right"></i> License</a></li>
@@ -48,8 +48,8 @@
      </ul>
       </div>
  </div>
- 
- <div class="span8"> 
+
+ <div class="span8">
   <section id="about">
 
  <h2>About the package</h2>
@@ -60,9 +60,9 @@
 <li><a href="http://www.nature.com/news/2010/100616/full/465860a.html">Metrics: Do metrics matter?</a></li>
 <li><a href="http://altmetrics.org/manifesto/">The altmetrics manifesto</a></li>
 </ul>
-  
-  
-  
+
+
+
   </section>
 
   <br><br><br>
@@ -77,19 +77,24 @@ The package is now available on <a href="http://cran.r-project.org/web/packages/
 If you would prefer a more up to date version, install directly from our GitHub repository. First you'll need to install the devtools package.
 
   <pre><code lang="R">install.packages('devtools')</code></pre>
-  
+
   then install the package directly from GitHub.
 
   <pre><code lang="r">library(devtools)
 install_github('rImpactStory', 'ropensci')</code></pre>
 
+The new version of ImpactStory's API also requires an API key. Email <a href="mailto:team@impactstory.org">team@impactstory.org</a> to obtain one. Then either add it to your <code>.rprofile</code> as:
+  <pre><code lang="r">
+    options(ImpactStoryKey = "YOUR_KEY")
+  </code></pre>
+
   </section>
 
-  <section id="providers">  
+  <section id="providers">
   <h2> Who provides metrics for ImpactStory? </h2>
   <pre><code lang="r">> IS_providers()
-Impact Story currently provides metrics on the following data providers: 
-bibtex citeulike crossref dataone delicious dryad facebook github mendeley plosalm pubmed scienceseeker scopus slideshare topsy webpage wikipedia 
+Impact Story currently provides metrics on the following data providers:
+bibtex citeulike crossref dataone delicious dryad facebook github mendeley plosalm pubmed scienceseeker scopus slideshare topsy webpage wikipedia
 $bibtex
 $bibtex$descr
 [1] ""
@@ -119,12 +124,12 @@ about_IS() # Will get you the current version of the API
 about_IS(as.df = TRUE)
 write.csv(about_IS(as.df = TRUE), file="About_Impact_Story.csv")
 </code></pre>
-   </section> 
+   </section>
 
   <br><br><br>
 
 <section id="metrics">
-<h2>Metrics on individual objects</h2>  
+<h2>Metrics on individual objects</h2>
 For a detailed explanation of all the sources and metrics queried by ImpactStory, please read their <a href="http://impactstory.org/faq">faq</a>. (scroll down to <i>which metrics are measured?</i>)
 <pre><code lang="r"># Metrics on a github repository
 metrics('karthikram,rtools', nspace = 'github')
@@ -143,7 +148,7 @@ metrics('10.6084/m9.figshare.97222')
 collection_metrics('kn5auf')</code>
 </pre>
 </section>
-  
+
 
 <section id="create_collections">
   <h2>Creating collections</h2>
@@ -154,14 +159,14 @@ collection_metrics('kn5auf')</code>
 <section id="license">
  <h2>License</h2>
  <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/3.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US">Creative Commons Attribution 3.0 Unported License</a>.
-  
+
   </section>
   <br><br><br>
   </div>
   </div>
 
-  </div>  
-    
+  </div>
+
     <script src="assets/js/jquery.js"></script>
     <script src="assets/js/bootstrap-transition.js"></script>
     <script src="assets/js/bootstrap-alert.js"></script>
