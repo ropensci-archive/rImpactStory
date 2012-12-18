@@ -2,9 +2,13 @@
 \alias{collection_metrics}
 \title{Retrives metadata on a valid ImpactStory collection ID}
 \usage{
-  collection_metrics(collection_id = NULL, as.csv = FALSE)
+  collection_metrics(collection_id = NULL,
+    key = getOption("ImpactStoryKey", stop("Missing Dropbox consumer key")),
+    as.csv = FALSE)
 }
 \arguments{
+  \item{key}{An ImpactStory API key}
+
   \item{collection_id}{A Impact Story collection id}
 
   \item{as.csv}{Default is \code{FALSE}. Set to \code{TRUE}

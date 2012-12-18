@@ -2,9 +2,12 @@
 \alias{IS_providers}
 \title{Returns a list of current ImpactStory data providers}
 \usage{
-  IS_providers(as.df = FALSE)
+  IS_providers(key = getOption("ImpactStoryKey", stop("Missing Dropbox consumer key")),
+    as.df = FALSE)
 }
 \arguments{
+  \item{key}{An ImpactStory API key}
+
   \item{as.df}{= \code{FALSE}. Returns a \code{data.frame}
   instead of a list.}
 }
@@ -18,9 +21,9 @@
 \dontrun{
 IS_providers()
 IS_providers(as.df = TRUE)
-write.csv(t1_providers(as.df = TRUE), file = "total-impact-metadata.csv")
+write.csv(t1_providers(as.df = TRUE), file = "ImpactStory_metadata.csv")
  # will write the data to a flat csv file.
- # Note: The coercion will not be enISrely clean due to the variable number of fields under descripISon for each metric provider.
+ # Note: The coercion will not be entirely clean due to the variable number of fields under description for each metric provider.
 }
 }
 \author{

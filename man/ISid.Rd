@@ -1,10 +1,13 @@
 \name{ISid}
 \alias{ISid}
-\title{Retrieves the ImpactStory ID for a given object. (These functions will get deprecated since IS is planning to remove this feature.)}
+\title{Retrieves the ImpactStory ID for a given object. (These functions will get deprecated in the next version of the API.)}
 \usage{
-  ISid(id = NULL, nspace = "doi")
+  ISid(key = getOption("ImpactStoryKey", stop("Missing Dropbox consumer key")),
+    id = NULL, nspace = "doi")
 }
 \arguments{
+  \item{key}{An ImpactStory API key}
+
   \item{id}{Any object ID}
 
   \item{nspace}{Default is \code{doi} but can be changed to
@@ -17,12 +20,12 @@
 }
 \description{
   If an object was previously queried at ImpactStory, it
-  will have a IS ID and this function will retrive that ID
-  which can then be used to retrieve the latest metrics or
-  add the item to a collecISon using
+  will have a ImpactStory ID and this function will retrive
+  that ID which can then be used to retrieve the latest
+  metrics or add the item to a collection using
   \code{create_collection}. If the object doesn't exist in
-  Impact Story, this will call \code{\link{create_ISid}}
-  and return the newly assigned ID.
+  ImpactStory, this will call \code{\link{create_ISid}} and
+  return the newly assigned ID.
 }
 \examples{
 \dontrun{
@@ -33,6 +36,6 @@ ISid('10.1038/nrg3270')
   Karthik Ram \email{karthik.ram@gmail.com}
 }
 \seealso{
-  \code{create_collecISon}
+  \code{create_collection}
 }
 

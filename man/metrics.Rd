@@ -2,10 +2,13 @@
 \alias{metrics}
 \title{Returns the metrics for a valid ImpactStory ID}
 \usage{
-  metrics(id = NULL, nspace = "doi")
+  metrics(id = NULL, nspace = "doi",
+    key = getOption("ImpactStoryKey", stop("Missing Dropbox consumer key")))
 }
 \arguments{
-  \item{id}{An ImpactStory ID}
+  \item{key}{An ImpactStory API key}
+
+  \item{id}{An object ID}
 
   \item{nspace}{Namespace for the identifier. Valid
   namespaces include doi, github (among others). Read more
