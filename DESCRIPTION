@@ -10,7 +10,7 @@ Maintainer: Karthik Ram <karthik.ram@gmail.com>
 Description: Provides a programmatic interface to ImpactStory API
 License: CC0
 URL: http://github.com/ropensci/rImpactStory
-Bug reports: http://github.com/ropensci/rImpactStory/issues
+BugReports: http://github.com/ropensci/rImpactStory/issues
 Depends:
     RJSONIO,
     XML,
