@@ -9,7 +9,7 @@
 \arguments{
   \item{key}{An ImpactStory API key}
 
-  \item{collection_id}{A Impact Story collection id}
+  \item{collection_id}{An Impact Story collection id}
 
   \item{as.csv}{Default is \code{FALSE}. Set to \code{TRUE}
   to return a .csv file. Use in conjunction with

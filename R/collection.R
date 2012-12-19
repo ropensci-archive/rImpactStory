@@ -2,7 +2,7 @@
 #'
 #' @return a \code{list} with the following fields: \item{_id}{id #} \item{_rev}{revision #} \item{created}{created on} \item{ip_address}{ip address of creation} \item{items}{list of items} \item{key_hash}{} \item{last_modified}{} \item{owner}{} \item{title}{} \item{type}{}.
 #' @param key An ImpactStory API key
-#' @param collection_id A Impact Story collection id
+#' @param collection_id An Impact Story collection id
 #' @param as.csv Default is \code{FALSE}. Set to \code{TRUE} to return a .csv file. Use in conjunction with \code{\link{save_collection}}
 #' @export
 #' @examples \dontrun{
