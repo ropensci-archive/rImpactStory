@@ -22,7 +22,14 @@ collection_data <- getURL(url)
 	if(length(grep('404 Not Found', collection_data))>0 && grep('404 Not Found', collection_data)==1) {
 						stop('No metadata found for supplied collection id', call.=FALSE)
 
-		}  else {
+		} else {
+
+		if(length(grep('403 Forbidden', collection_data))>0 && grep('403 Forbidden', collection_data)==1) {
+								stop('Your ImpactStory key could not be authorized. Please contact team@impactstory.org for further assistance. \n', call.=FALSE)
+
+				}
+
+			else {
 						if(!as.csv) {
 				cmd_results <- fromJSON(collection_data)
 				return(cmd_results)
@@ -32,6 +39,7 @@ collection_data <- getURL(url)
 				}
 
 		}
+	}
 }
 
 #'Saves metrics from a collection to a csv file
