@@ -9,7 +9,7 @@
 #' collection_metrics('kn5auf')
 #'}
 #' @author Karthik Ram \email{karthik.ram@@gmail.com}
-collection_metrics <- function(collection_id = NULL, key = getOption("ImpactStoryKey", stop("Missing Dropbox consumer key")), as.csv = FALSE) {
+collection_metrics <- function(collection_id = NULL, key = getOption("ImpactStoryKey", stop("Missing ImpactStory consumer key")), as.csv = FALSE) {
 	if(is.null(collection_id))
 		stop('Did not specify a collection ID', call.=FALSE)
 
