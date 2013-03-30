@@ -11,7 +11,7 @@
 #' about_IS(as.df = TRUE) # will return a nicely formatted data.frame
 #'}
 #' @author Karthik Ram \email{karthik.ram@@gmail.com}
-about_IS <- function(key = getOption("ImpactStoryKey", stop("Missing Dropbox consumer key")), as.df = FALSE) {
+about_IS <- function(key = getOption("ImpactStoryKey", stop("Missing ImpactStory consumer key")), as.df = FALSE) {
 
 base_url <- "http://api.impactstory.org/v1"
  url <- paste(base_url, "?key=", key, sep="")

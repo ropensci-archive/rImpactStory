@@ -14,7 +14,7 @@
 #' metrics('10.6084/m9.figshare.91458')
 #'}
 #' @author Karthik Ram \email{karthik.ram@@gmail.com}
-metrics <- function(id = NULL, nspace = 'doi', key = getOption("ImpactStoryKey", stop("Missing Dropbox consumer key"))) {
+metrics <- function(id = NULL, nspace = 'doi', key = getOption("ImpactStoryKey", stop("Missing ImpactStory consumer key"))) {
 if(is.null(id))
 	stop("No id specified", call.=FALSE)
 

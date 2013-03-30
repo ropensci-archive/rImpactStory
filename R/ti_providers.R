@@ -13,7 +13,7 @@
 #'  # Note: The coercion will not be entirely clean due to the variable number of fields under description for each metric provider.
 #'}
 #' @author Karthik Ram \email{karthik.ram@@gmail.com}
-IS_providers <- function(key = getOption("ImpactStoryKey", stop("Missing Dropbox consumer key")), as.df = FALSE) {
+IS_providers <- function(key = getOption("ImpactStoryKey", stop("Missing ImpactStory consumer key")), as.df = FALSE) {
 
  base_url <- "http://api.impactstory.org/v1"
  provider_url <- paste(base_url, "/provider", "?key=", key, sep="")
