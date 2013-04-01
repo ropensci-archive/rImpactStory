@@ -6,7 +6,7 @@
     key = getOption("ImpactStoryKey", stop("Missing ImpactStory consumer key")))
 }
 \arguments{
-  \item{collection_id}{ImpactStory collection ID}
+  \item{impact_report_id}{ImpactStory collection ID}
 
   \item{key}{ImpactStory API key. Contact: team at
   impactstory.org}
