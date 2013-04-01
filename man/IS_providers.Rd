@@ -2,7 +2,7 @@
 \alias{IS_providers}
 \title{Returns a list of current ImpactStory data providers}
 \usage{
-  IS_providers(key = getOption("ImpactStoryKey", stop("Missing Dropbox consumer key")),
+  IS_providers(key = getOption("ImpactStoryKey", stop("Missing ImpactStory consumer key")),
     as.df = FALSE)
 }
 \arguments{

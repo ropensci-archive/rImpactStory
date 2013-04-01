@@ -2,7 +2,7 @@
 #'
 #'Generates a report on a collection of GitHub repositories
 #' @param collection_id ImpactStory collection ID
-#' @param  key ImpactStory API key. If you do not have one, email team@impactstory.org
+#' @param  key ImpactStory API key. Contact: team at impactstory.org
 #' @export
 #' @seealso github_plot
 #' @return \code{data.frame}

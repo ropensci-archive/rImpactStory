@@ -3,7 +3,7 @@
 \title{Returns the metrics for a valid ImpactStory ID}
 \usage{
   metrics(id = NULL, nspace = "doi",
-    key = getOption("ImpactStoryKey", stop("Missing Dropbox consumer key")))
+    key = getOption("ImpactStoryKey", stop("Missing ImpactStory consumer key")))
 }
 \arguments{
   \item{key}{An ImpactStory API key}

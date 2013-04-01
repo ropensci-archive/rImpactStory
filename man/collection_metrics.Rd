@@ -3,7 +3,7 @@
 \title{Retrives metadata on a valid ImpactStory collection ID}
 \usage{
   collection_metrics(collection_id = NULL,
-    key = getOption("ImpactStoryKey", stop("Missing Dropbox consumer key")),
+    key = getOption("ImpactStoryKey", stop("Missing ImpactStory consumer key")),
     as.csv = FALSE)
 }
 \arguments{

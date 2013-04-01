@@ -2,7 +2,7 @@
 \alias{about_IS}
 \title{About ImpactStory}
 \usage{
-  about_IS(key = getOption("ImpactStoryKey", stop("Missing Dropbox consumer key")),
+  about_IS(key = getOption("ImpactStoryKey", stop("Missing ImpactStory consumer key")),
     as.df = FALSE)
 }
 \arguments{
