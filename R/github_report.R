@@ -11,7 +11,7 @@
 #' # To visualize this, then use
 #' github_plot(df)
 #'}
-github_report <- function(collection_id, key = getOption("ImpactStoryKey", stop("Missing ImpactStory consumer key"))) {
+github_report <- function(impact_report_id, key = getOption("ImpactStoryKey", stop("Missing ImpactStory consumer key"))) {
 metrics <- collection_metrics(collection_id = impact_report_id, key = key)
 title <- metrics[[which(names(metrics) == "title")]]
 # From all the fields returned, we just need the data on individual items

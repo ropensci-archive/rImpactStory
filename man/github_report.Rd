@@ -2,13 +2,14 @@
 \alias{github_report}
 \title{github report}
 \usage{
-  github_report(collection_id,
+  github_report(impact_report_id,
     key = getOption("ImpactStoryKey", stop("Missing ImpactStory consumer key")))
 }
 \arguments{
   \item{collection_id}{ImpactStory collection ID}
 
-  \item{key}{ImpactStory API key. Contact: team}
+  \item{key}{ImpactStory API key. Contact: team at
+  impactstory.org}
 }
 \value{
   \code{data.frame}
