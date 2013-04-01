@@ -1,7 +1,7 @@
 #' github report
 #'
 #'Generates a report on a collection of GitHub repositories
-#' @param collection_id ImpactStory collection ID
+#' @param impact_report_id ImpactStory collection ID
 #' @param  key ImpactStory API key. Contact: team at impactstory.org
 #' @export
 #' @seealso github_plot
