@@ -32,3 +32,4 @@ Collate:
     'ti_providers.R'
     'github_plot.R'
     'github_report.R'
+    'github_heatmap.R'
