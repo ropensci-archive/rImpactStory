@@ -28,13 +28,16 @@ return(str_sub(ISid, start=2, end=-2))
 #'
 #' @param id The id of an object. If you specify a \code{doi}, then leave the namespace blank. Otherwise please specify the namespace. Currently acceptable namespaces are \code{github}, \code{url}, and \code{pmid} (the last one is new and experimetal as of 09/07/2012)
 #' @param  nspace Default is \code{doi}
+#' @param key An ImpactStory API key
 #' @export
 #' @return character
 #' @examples \dontrun{
-#' create_ISid('10.1038/nrg3270')
+#' create_ISid(id='10.1038/nrg3270')
 #'}
-create_ISid <- function(id = NULL, nspace = 'doi') {
-    new_id <- postForm(paste0("http://api.impactstory.org/v1/item/", nspace, "/", id), args = NULL, style = "POST")
-    return(str_sub(new_id[1], start = 2, end = -2))
+create_ISid <- function(id = NULL, nspace = 'doi', key = getOption("ImpactStoryKey", stop("Missing ImpactStory consumer key"))) {
+  url <- "http://api.impactstory.org/v1/item/"
+  url2 <- paste0(url, nspace, "/", id, "?key=", key)
+  out <- postForm(url2, args = NULL, style = "POST")
+  return(str_sub(out[1], start = 2, end = -2))
 }
 
