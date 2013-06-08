@@ -42,7 +42,8 @@ metrics <- function(id = NULL, nspace = 'doi', addifnot = FALSE, sleep = 0.5, ke
     #     stop("Item not found in ImpactStory database.", call.= FALSE)
   } else 
   {
-    metric_data <- fromJSON(metrics, depth = 150L)
+#     metric_data <- fromJSON(metrics, depth = 150L)
+    metric_data <- fromJSON(metrics)
     return(metric_data)
   }
 #   
