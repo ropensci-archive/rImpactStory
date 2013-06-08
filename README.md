@@ -6,7 +6,7 @@
 ## Installing this package
 A stable version of this package is now available on CRAN. But if you prefer to install a dev version, follow the instructions below:
 
-```r
+```coffee
 library(devtools)
 install_github('rImpactStory', 'rOpenSci')
 ```
@@ -19,7 +19,7 @@ or supply it as a function argument with each call (in situations where storing 
 
 ## What is the current version of ImpactStory's API?
 
-```r
+```coffee
 about_IS()
 # you can get this as a cleaner output by setting as.df = TRUE
 > about_IS(as.df = TRUE)
@@ -35,7 +35,7 @@ It appears that we are currently on version cristhian. Excellent.
 
 ## Which providers does IS derive its metrics from?
 
-```r
+```coffee
 IS_providers()
 # this will return a list. If you prefer a data.frame, then set as.df = TRUE
 IS_providers(as.df = TRUE)
@@ -49,7 +49,7 @@ write.csv(IS_providers(as.df = TRUE), file = "~/Desktop/IS_providers.csv")
 
 ## I have a DOI, can I get some metrics on this paper?
 
-```r
+```coffee
 my_id <- metrics('10.1890/ES11-00339.1')
 # That simple! ImpactStory no longer generates their own unique ID. Just be sure to explicitly specifiy namespace if you are supplying something other than a DOI
 ```
@@ -58,14 +58,14 @@ my_id <- metrics('10.1890/ES11-00339.1')
 
 Sure thing!
 
-```r
+```coffee
 my_ids <- read.csv('~/Desktop/list_of_dois.csv')
 metrics <- llply(as.list(my_ids$doi), metrics, .progress = 'text')
 ```
 
 ## Looks great but seems a bit reptitive, right? If you have to repeatedly retrieve metrics on a collection of objects, then just make it into a collection!
 
-```r
+```coffee
 collection_id <- create_collection(ISids) # function not working yet
 # Note that create_collection() needs a list as an input where each item on the list is itself a list with namespace and the id.
 
